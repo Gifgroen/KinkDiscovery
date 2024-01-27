@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8050522B65A6890005E822 /* App in Resources */ = {isa = PBXBuildFile; fileRef = 8C8050512B65A6890005E822 /* App */; };
+		8C8050542B65A6B30005E822 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 8C8050532B65A6B30005E822 /* App */; };
 		8CF489D32B61AC5A00A28143 /* KinkDiscoveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF489D22B61AC5A00A28143 /* KinkDiscoveryApp.swift */; };
 		8CF489D52B61AC5A00A28143 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF489D42B61AC5A00A28143 /* ContentView.swift */; };
 		8CF489D72B61AC5C00A28143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF489D62B61AC5C00A28143 /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C8050512B65A6890005E822 /* App */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = App; sourceTree = "<group>"; };
 		8CF489CF2B61AC5A00A28143 /* KinkDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinkDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF489D22B61AC5A00A28143 /* KinkDiscoveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinkDiscoveryApp.swift; sourceTree = "<group>"; };
 		8CF489D42B61AC5A00A28143 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8050542B65A6B30005E822 /* App in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C80504D2B65A2400005E822 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8C8050512B65A6890005E822 /* App */,
+			);
+			path = Features;
+			sourceTree = SOURCE_ROOT;
+		};
+		8CB8AE0D2B659A7E005E96D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CF489C62B61AC5A00A28143 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +98,7 @@
 				8CF489E32B61AC5C00A28143 /* KinkDiscoveryTests */,
 				8CF489ED2B61AC5C00A28143 /* KinkDiscoveryUITests */,
 				8CF489D02B61AC5A00A28143 /* Products */,
+				8CB8AE0D2B659A7E005E96D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF489FF2B61AD0E00A28143 /* Config */,
+				8C80504D2B65A2400005E822 /* Features */,
 				8CF489FE2B61ACF600A28143 /* Resources */,
 				8CF489FD2B61ACE700A28143 /* Sources */,
 				8CF489D92B61AC5C00A28143 /* Preview Content */,
@@ -169,6 +190,9 @@
 			dependencies = (
 			);
 			name = KinkDiscovery;
+			packageProductDependencies = (
+				8C8050532B65A6B30005E822 /* App */,
+			);
 			productName = KinkDiscovery;
 			productReference = 8CF489CF2B61AC5A00A28143 /* KinkDiscovery.app */;
 			productType = "com.apple.product-type.application";
@@ -217,7 +241,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					8CF489CE2B61AC5A00A28143 = {
 						CreatedOnToolsVersion = 15.2;
@@ -257,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8050522B65A6890005E822 /* App in Resources */,
 				8CF489DB2B61AC5C00A28143 /* Preview Assets.xcassets in Resources */,
 				8CF489D72B61AC5C00A28143 /* Assets.xcassets in Resources */,
 			);
@@ -355,6 +380,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -416,6 +442,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -443,6 +470,7 @@
 				CODE_SIGN_ENTITLEMENTS = KinkDiscovery/Config/KinkDiscovery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"KinkDiscovery/Preview Content\"";
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -458,11 +486,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gifgroen.KinkDiscovery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -481,6 +513,7 @@
 				CODE_SIGN_ENTITLEMENTS = KinkDiscovery/Config/KinkDiscovery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"KinkDiscovery/Preview Content\"";
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -496,11 +529,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gifgroen.KinkDiscovery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -518,6 +555,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -541,6 +579,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -563,6 +602,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -585,6 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = AGGG7W5JL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -641,6 +682,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C8050532B65A6B30005E822 /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CF489C72B61AC5A00A28143 /* Project object */;
 }
