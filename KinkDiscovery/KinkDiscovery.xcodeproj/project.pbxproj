@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		8C8050512B65A6890005E822 /* App */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = App; sourceTree = "<group>"; };
+		8CA4D6082B718334001280A5 /* ChannelList */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChannelList; sourceTree = "<group>"; };
 		8CF489CF2B61AC5A00A28143 /* KinkDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinkDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF489D22B61AC5A00A28143 /* KinkDiscoveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinkDiscoveryApp.swift; sourceTree = "<group>"; };
 		8CF489D42B61AC5A00A28143 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		8C80504D2B65A2400005E822 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4D6082B718334001280A5 /* ChannelList */,
 				8C8050512B65A6890005E822 /* App */,
 			);
 			path = Features;
@@ -265,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 8CF489C62B61AC5A00A28143;
+			packageReferences = (
+				8CA4D5FF2B718109001280A5 /* XCLocalSwiftPackageReference "Features/ChannelList" */,
+			);
 			productRefGroup = 8CF489D02B61AC5A00A28143 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -682,6 +687,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8CA4D5FF2B718109001280A5 /* XCLocalSwiftPackageReference "Features/ChannelList" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Features/ChannelList;
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		8C8050532B65A6B30005E822 /* App */ = {

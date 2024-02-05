@@ -1,17 +1,18 @@
 // swift-tools-version: 5.10
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-  name: "App",
+  name: "ChannelList",
   platforms: [
     .iOS(.v15),
     .macOS(.v14)
   ],
   products: [
     .library(
-      name: "App",
-      targets: ["App"]
+      name: "ChannelList",
+      targets: ["ChannelList"]
     ),
   ],
   dependencies: [
@@ -19,16 +20,15 @@ let package = Package(
       url: "https://github.com/krzysztofzablocki/Inject.git",
       exact: "1.3.0"
     ),
-    .package(path: "../ChannelList")
   ],
   targets: [
     .target(
-      name: "App",
-      dependencies: ["Inject", "ChannelList"]
+      name: "ChannelList",
+      dependencies: ["Inject"]
     ),
     .testTarget(
-      name: "AppTests",
-      dependencies: ["App"]
+      name: "ChannelListTests",
+      dependencies: ["ChannelList"]
     ),
   ]
 )

@@ -1,9 +1,8 @@
 import SwiftUI
 import Inject
+import ChannelList
 
 public struct AppView: View {
-
-  @ObserveInjection var inject
 
   public init() {
     /* NOOP */
@@ -15,10 +14,14 @@ public struct AppView: View {
         .imageScale(.large)
         .foregroundStyle(.tint)
       Text("Hello, Kink!")
+      ChannelListView()
     }
-    .padding()
     .enableInjection()
   }
+ 
+#if DEBUG
+  @ObserveInjection var inject
+#endif
 }
 
 #Preview {
